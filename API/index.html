@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="main.js"></script>
+</head>
+
+<body onload="getUsers()">
+    <form class="form">
+        <h2>Registrar usuario</h2>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" placeholder="Ingrese su nombre" required />
+        <label for="apellido">Apellido</label>
+        <input id="apellido" placeholder="Ingrese su apellido" required />
+        <label for="email">Email</label>
+        <input id="email" placeholder="Ingrese su correo electronico" required />
+        <label for="telefono">Telefono</label>
+        <input id="telefono" placeholder="número telefónico" required />
+        <label for="genero">Genero</label>
+        <select id="genero">
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+      </select>
+        <input onclick="postUser(event)" type="submit" />
+    </form>
+
+    <div id="data">
+
+    </div>
+
+</body>
+
+</html>
